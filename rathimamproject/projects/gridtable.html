@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid table</title>
+    <!-- stylling -->
+    <style>
+        .main-container {
+            background-color: grey;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            border-style: solid;
+        }
+
+        .main-one {
+            background-color: aqua;
+            height: 20vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .one {
+            background-color: blue;
+        }
+
+        .two {
+            background-color: orange;
+        }
+
+        .three {
+            background-color: firebrick;
+        }
+
+        .four {
+            background-color: yellow;
+        }
+
+        /* main-two */
+        .main-two {
+            background-color: green;
+            height: 60vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 75% 25%;
+        }
+
+        .div-one {
+            background-color: chartreuse;
+        }
+
+        .div-two {
+            background-color: fuchsia;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        /* main-three */
+        .main-three {
+            background-color: aqua;
+            height: 20vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .class-one {
+            background-color: pink;
+        }
+
+        .class-two {
+            background-color: purple;
+        }
+
+        .class-three {
+            background-color: cornflowerblue;
+        }
+
+        /* pc section */
+        .pc-one {
+            background-color: aqua;
+        }
+
+        .pc-two {
+            background-color: black;
+        }
+
+        .pc-three {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-one">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+        </div>
+        <!-- main-two -->
+        <div class="main-two">
+            <div class="div-one"></div>
+            <div class="div-two">
+                <div class="pc-one"></div>
+                <div class="pc-two"></div>
+                <div class="pc-three"></div>
+            </div>
+        </div>
+        <!-- main-three -->
+        <div class="main-three">
+            <div class="class-one"></div>
+            <div class="class-two"></div>
+            <div class="class-three"></div>
+        </div>
+    </div>
+</body>
+
+</html>

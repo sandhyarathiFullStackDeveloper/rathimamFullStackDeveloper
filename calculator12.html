@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function numberType(sandhya) {
+            document.getElementById("display").innerHTML = sandhya;
+        }
+
+    </script>
+    <title>Document</title>
+    <!-- styling -->
+    <style>
+        .main-container {
+            background-color: gray;
+            height: 90vh;
+            width: 33vw;
+            display: grid;
+            border-style: solid;
+        }
+
+        .main-one {
+            height: 25vh;
+            width: 100%;
+            border-style: solid;
+            border: 5px;
+        }
+
+        .main-two {
+            height: 65vh;
+            width: 100%;
+            background-color: orange;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .display {
+            height: 100%;
+            width: 100%;
+            background-color: beige;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .a {
+            height: 100%;
+            width: 100%;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-one">
+            <div class="display" id="display"></div>
+        </div>
+        <div class="main-two">
+            <div><button class="a">AC</button></div>
+            <div><button class="a">+/-</button></div>
+            <div><button class="a">%</button></div>
+            <div><button class="a">/</button></div>
+            <div><button class="a" onclick="numberType(7)">7</button></div>
+            <div><button class="a" onclick="numberType(8)">8</button></div>
+            <div><button class="a" onclick="numberType(7)">9</button></div>
+            <div><button class="a">+</button></div>
+            <div><button class="a" onclick="numberType(6)">6</button></div>
+            <div><button class="a" onclick="numberType(5)">5</button></div>
+            <div><button class="a" onclick="numberType(4)">4</button></div>
+            <div><button class="a">-</button></div>
+            <div><button class="a" onclick="numberType(3)">3</button></div>
+            <div><button class="a" onclick="numberType(2)">2</button></div>
+            <div><button class="a" onclick="numberType(1)">1</button></div>
+            <div><button class="a">x</button></div>
+            <div><button class="a" onclick="numberType(0)">0</button></div>
+            <div><button class="a" onclick="numberType('00')">00</button></div>
+            <div><button class="a">.</button></div>
+            <div><button class="a">=</button></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

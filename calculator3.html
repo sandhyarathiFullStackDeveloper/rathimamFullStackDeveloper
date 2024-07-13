@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>calculator3</title>
+    <script>
+        function numberType(sandhya){
+            document.getElementById("ayush").innerHTML=sandhya;
+        }
+    </script>
+    <!-- styling -->
+    <style>
+        .main-container {
+            height: 65vh;
+            width: 40vw;
+            background-color: aqua;
+            border-style: solid;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .row-one {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            background-color: gray;
+            height: 100%;
+            width: 10vw;
+        }
+
+        .row-two {
+            height: 14.5vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        button {
+            height: 100%;
+            width: 100%;
+            font-size: xx-large;
+        }
+
+        .box-one {
+            background-color: gray;
+            height: 100%;
+            width: 20vw;
+        }
+
+        .display {
+            height: 140px;
+            width: 100%;
+        }
+
+        .inner {
+            background-color: gray;
+            height: 115px;
+            width: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="display">
+            <h1 class="inner" id="ayush"></h1>
+        </div>
+        <div class="row-one">
+            <div class="box"><button>AC</button></div>
+            <div class="box"><button>+/-</button></div>
+            <div class="box"><button>%</button></div>
+            <div class="box"><button>/</button></div>
+
+        </div>
+        <div class="row-one">
+            <div class="box"><button onclick="numberType(7)">7</button></div>
+            <div class="box"><button onclick="numberType(8)">8</button></div>
+            <div class="box"><button onclick="numberType(9)">9</button></div>
+            <div class="box"><button>x</button></div>
+
+        </div>
+        <div class="row-one">
+            <div class="box"><button onclick="numberType(4)">4</button></div>
+            <div class="box"><button onclick="numberType(5)">5</button></div>
+            <div class="box"><button onclick="numberType(6)">6</button></div>
+            <div class="box"><button>+</button></div>
+
+        </div>
+        <div class="row-one">
+            <div class="box"><button onclick="numberType(1)">1</button></div>
+            <div class="box"><button onclick="numberType(2)">2</button></div>
+            <div class="box"><button onclick="numberType(3)">3</button></div>
+            <div class="box"><button>-</button></div>
+
+        </div>
+        <div class="row-two">
+            <div class="box-one" onclick="numberType(0)"><button>0</button></div>
+            <div class="box"><button>.</button></div>
+            <div class="box"><button>=</button></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <!-- styling -->
+    <style>
+        .main-container {
+            background-color: aqua;
+            height: 100vh;
+            width: 100vh;
+            display: grid;
+            border-style: solid;
+           width: 100vw;
+        }
+
+        .main-one {
+            background-color: aliceblue;
+            height: 20vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .one {
+            background-color: aqua;
+        }
+
+        .two {
+            background-color: beige;
+        }
+
+        .three {
+            background-color: aquamarine;
+
+        }
+
+        .four {
+            background-color: pink;
+        }
+
+        .main-two {
+            background-color: red;
+            height: 60vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 75% 25%;
+        }
+
+        .div-one {
+            background-color: green;
+        }
+
+        .div-two {
+            background-color: aliceblue;
+            display: grid;
+            grid-template-rows: 1fr, 1fr, 1fr;
+        }
+
+        .mid-one {
+            background-color: aliceblue;
+        }
+
+        .mid-two {
+            background-color: aquamarine;
+        }
+
+        .mid-three {
+            background-color: pink;
+        }
+
+        .main-three {
+            background-color: black;
+            height: 20vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .pc-one {
+            background-color: orange;
+        }
+
+        .pc-two {
+            background-color: yellow;
+        }
+
+        .pc-three {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-one">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+        </div>
+        <!-- maintwo -->
+        <div class="main-two">
+            <div class="div-one"></div>
+            <div class="div-two">
+                <div class="mid-one"></div>
+                <div class="mid-two"></div>
+                <div class="mid-three"></div>
+            </div>
+        </div>
+        <div class="main-three">
+            <div class="pc-one"></div>
+            <div class="pc-two"></div>
+            <div class="pc-three"></div>
+        </div>
+    </div>
+</body>
+
+</html>

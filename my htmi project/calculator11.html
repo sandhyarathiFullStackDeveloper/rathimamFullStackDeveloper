@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main-container {
+            background-color: gray;
+            height: 90vh;
+            width: 33vw;
+            border-style: solid;
+        }
+
+        .main-one {
+            height: 20vh;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+
+        button {
+            height: 100%;
+            width: 100%;
+            font-size: 25px;
+        }
+
+        .main-two {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            height: 70vh;
+            width: 100%;
+        }
+        .a{
+            background-color: orange;
+        }
+    </style>
+<script>
+    function numberType(sandhya){
+        document.getElementById("display").innerHTML= sandhya;
+    }
+ function clearFunction(){
+    document.getElementById("display").innerHTML= "";
+ }
+</script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-one">
+            <h1 id="display"></h1>
+        </div>
+        <div class="main-two">
+            <div><button class="a" onclick="clearFunction()">AC</button></div>
+            <div><button class="a">+/-</button></div>
+            <div><button class="a">%</button></div>
+            <div><button class="a">/</button></div>
+            <div><button onclick="numberType(9)">9</button></div>
+            <div><button onclick="numberType(8)">8</button></div>
+            <div><button onclick="numberType(7)">7</button></div>
+            <div><button style="background-color: orange;">+</button></div>
+            <div><button onclick="numberType(6)">6</button></div>
+            <div><button onclick="numberType(5)">5</button></div>
+            <div><button onclick="numberType(4)">4</button></div>
+            <div><button style="background-color: orange;">-</button></div>
+            <div><button onclick="numberType(3)">3</button></div>
+            <div><button onclick="numberType(2)">2</button></div>
+            <div><button onclick="numberType(1)">1</button></div>
+            <div><button style="background-color: orange;">x</button></div>
+            <div><button onclick="numberType(0)">0</button></div>
+            <div><button onclick="numberType('00')">00</button></div>
+            <div><button >.</button></div>
+            <div><button style="background-color: orange;">=</button></div>
+        </div>
+    </div>
+</body>
+
+</html>

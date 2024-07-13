@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+
+    <!-- styling -->
+    <style>
+        .main-container {
+            height: 90vh;
+            width: 35vw;
+            border-style: solid;
+            height: auto;
+            background-color: orange;
+        }
+
+        .main-one {
+            height: 25vh;
+            width: 100%;
+            background-color: orange;
+        }
+
+        .main-two {
+            height: 65vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        button {
+            height: 100%;
+            width: 100%;
+            font-size: 25px;
+        }
+
+        #display {
+            background-color: gray;
+            height: 90%;
+            width: 90%;
+            padding: 5px;
+            margin-left: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+    <script>
+        function numberType(ayush) {
+            document.getElementById("display").innerHTML = ayush;
+            document.getElementById("display").style.backgroundColor ="green";
+        }
+        function clearFunction() {
+            document.getElementById("display").innerHTML = "";
+            document.getElementById("display").style.backgroundColor ="#C80036";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-one">
+            <h1 id="display"></h1>
+        </div>
+        <div class="main-two">
+
+
+            <div><button style="background-color: red;" onclick="clearFunction()">AC</button></div>
+            <div><button>+/-</button></div>
+            <div><button>%</button></div>
+            <div><button style="background-color: yellow;">/</button></div>
+            <div><button onclick="numberType(9)">9</button></div>
+            <div><button onclick="numberType(8)">8</button></div>
+            <div><button onclick="numberType(7)">7</button></div>
+            <div><button style="background-color: yellow;">+</button></div>
+            <div><button onclick="numberType(6)">6</button></div>
+            <div><button onclick="numberType(5)">5</button></div>
+            <div><button onclick="numberType(4)">4</button></div>
+            <div><button style="background-color: yellow;">-</button></div>
+            <div><button onclick="numberType(3)">3</button></div>
+            <div><button onclick="numberType(2)">2</button></div>
+            <div><button onclick="numberType(1)">1</button></div>
+            <div><button style="background-color: yellow;">x</button></div>
+            <div><button onclick="numberType(0)">0</button></div>
+            <div><button onclick="numberType('00')">00</button></div>
+            <div><button>.</button></div>
+            <div><button style="background-color: yellow;">=</button></div>
+        </div>
+    </div>
+</body>
+
+</html>

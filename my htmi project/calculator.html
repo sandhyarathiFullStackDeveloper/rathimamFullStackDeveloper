@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>calculator</title>
+
+    <!-- styling -->
+    <style>
+        .main-container {
+            background-color: aqua;
+            border-style: solid;
+            height: 65vh;
+            width: 40vw;
+        }
+
+        .row-one {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            background-color: gray;
+            height: 100%;
+            width: 10vw;
+            border-style: solid;
+        }
+
+        button {
+            height: 100%;
+            width: 100%;
+            font-size: 24px;
+            background-color: grey;
+        }
+
+        .row-two {
+            height: 116px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 6px;
+        }
+
+        .box-one {
+            background-color: gray;
+            height: 100%;
+            width: 9.5vw;
+            border-style: solid;
+        }
+
+        .screen-section {
+            margin-bottom: 20px;
+            height: 150px;
+            width: 100%;
+            background-color: grey;
+
+        }
+
+        .display {
+            background-color: azure;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function numberType(ayush) {
+            document.getElementById("display").innerHTML = ayush;
+        }
+        function clearFunction() {
+            document.getElementById("display").innerHTML = "";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="screen-section">
+            <h1 class="display" id="display"></h1>
+        </div>
+        <div class="row-one">
+            <div class="box"><button onclick="clearFunction()"> AC</button></div>
+            <div class="box"><button>+/-</button></div>
+            <div class="box"><button>%</button></div>
+            <div class="box"><button style="background-color: orange;">/</button></div>
+        </div>
+        <div class="row-one">
+            <div class="box" onclick="numberType(7)"><button>7</button></div>
+            <div class="box" onclick="numberType(8)"><button>8</button></div>
+            <div class="box" onclick="numberType(9)"><button>9</button></div>
+            <div class="box"><button style="background-color: orange;">x</button></div>
+        </div>
+        <div class="row-one">
+            <div class="box" onclick="numberType(4)"><button>4</button></div>
+            <div class="box" onclick="numberType(5)"><button>5</button></div>
+            <div class="box" onclick="numberType(6)"><button>6</button></div>
+            <div class="box"><button style="background-color: orange;">-</button></div>
+        </div>
+        <div class="row-one">
+            <div class="box" onclick="numberType(1)"><button>1</button></div>
+            <div class="box" onclick="numberType(2)"><button>2</button></div>
+            <div class="box" onclick="numberType(3)"><button>3</button></div>
+            <div class="box"><button style="background-color: orange;">+</button></div>
+        </div>
+        <div class="row-two">
+            <div class="box" style="width: 290px;"><button>0</button></div>
+            <div class="box-one"><button>.</button></div>
+            <div class="box-one"><button style="background-color: orange;">=</button></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

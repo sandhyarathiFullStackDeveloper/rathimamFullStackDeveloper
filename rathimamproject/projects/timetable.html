@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>grid</title>
+
+    <style>
+        .main-container {
+           background-color: gray;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr; 
+        }
+
+        .top {
+            background-color: blue;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .middle {
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .bottom {
+            background-color: green;
+        }
+
+        .middle-one {
+            background-color: brown;
+        }
+
+        .middle-two {
+            background-color: orange;
+        }
+
+        .top-one {
+            background-color: cornflowerblue;
+        }
+
+        .top-two {
+            background-color: bisque;
+        }
+
+        .top-three {
+            background-color: mediumorchid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="top">
+            <div class="top-one"></div>
+            <div class="top-two"></div>
+            <div class="top-three"></div>
+        </div>
+        <div class="middle">
+            <div class="middle-one"></div>
+            <div class="middle-two"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</body>
+
+</html>

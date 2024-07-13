@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <!-- styling -->
+    <style>
+        body {
+            background-image: url(https://cdn.pixabay.com/photo/2017/03/05/21/43/mountains-2120004_1280.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .main-container {
+            background-color: grey;
+            height: 90vh;
+            width: 40vw;
+            border-style: solid;
+            margin-left: 350px;
+            padding: 10px;
+        }
+
+        form {
+            background-color: blueviolet;
+            border-style: solid;
+            height: 98.2vh;
+            padding: 5px;
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230801/pngtree-lotus-flower-hd-wallpaper-image_12965439.jpg);
+            height: 97%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .ep {
+            font-family: monospace;
+        }
+
+        label {
+            font-size: x-large;
+        }
+
+        .input {
+            height: 80vh;
+            width: 60vw;
+        }
+
+        button {
+            background-color: blueviolet;
+            height: 24px;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- form starting -->
+        <form action="./thankyou.html">
+            <!-- feildset -->
+            <fieldset>
+                <legend>
+                    <h1 class="ep"><u>Enjoy Programming</u></h1>
+                </legend>
+                <label>First Name:
+                    <input type="text" placeholder="Enter First Name">
+                </label>
+                <br><br>
+                <label>Last Name:
+                    <input type="text" placeholder="Enter Last Name">
+                </label>
+                <br><br>
+                <label>Date Of Birth:
+                    <input type="date">
+                </label>
+                <br><br>
+                <label>E-mail:
+                    <input type="email" placeholder="abcd@gmail.com">
+                </label>
+                <br><br>
+                <label>Password:
+                    <input type="password" placeholder="****">
+                </label>
+                <br><br>
+                <label>Mobile no :</label>
+                <input type="number">
+                <br><br>
+                <label>Address:</label>
+                <input type="text">
+                <br><br>
+                <label>Education :</label>
+                <input type="radio">school
+                <input type="radio">j.r.
+                <input type="radio">p.g.
+                <br><br>
+                <label>Gender:
+                    <input type="radio" name="Gender">Mail
+                    <input type="radio" name="Gender">Female
+                    <input type="radio" name="Gender">Other
+                </label>
+                <br><br>
+                <label>Pic A Batch:
+                    <select>
+                        <optgroup label="seniour">
+                            <option>Proffetiant Batch</option>
+                            <option>Scholer Batch</option>
+                        </optgroup>
+                        <optgroup label="Junior">
+                            <option>Ambitias Batch</option>
+                            <option>Visunary Batch</option>
+                        </optgroup>
+                    </select>
+                </label>
+                <br><br>
+                <h1>What Laptop Do You Own</h1>
+                <input type="radio" name="Laptop"> Windows
+                <input type="radio" name="Laptop"> Mac
+                <input type="radio" name="Laptop"> Linux
+                <br><br>
+                <button style="border-radius: 30px;">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

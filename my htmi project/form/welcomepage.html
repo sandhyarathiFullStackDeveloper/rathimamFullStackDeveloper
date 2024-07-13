@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome</title>
+    <!-- styling -->
+    <style>
+        body {
+            background-image: url(https://img.goodfon.com/wallpaper/big/9/87/priroda-gory-leto-svet-solnca.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .main-container {
+            background-color: grey;
+            height: 100vh;
+            width: 40vw;
+            border-style: solid;
+            margin-left: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: black;
+            height: 20vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Welcome {
+            font-size: 35px;
+            color: yellow;
+        }
+
+        .form {
+            text-align: center;
+            font-size: 70px;
+        }
+
+        button {
+            margin-left: 35%;
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            font-size: larger;
+            background-color: aqua;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .background {
+            height: 100%;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/030/521/327/small/generated-ai-images-photo.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1 class="Welcome">Welcome To My Form Page</h1>
+        </div>
+        <div class="background">
+            <h1 class="form">Please Fill The Form</h1>
+            <br>
+            <br>
+            <form action="./formOne.html">
+                <button>Click Here</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
